@@ -1,0 +1,41 @@
+<section class="py-2">
+<div class="row">
+  <div class="col-md-7 text-center">
+  <h1 class="display-3 mt-3 pt-5">
+      Web Development  Ebook
+  </h1>
+  <p class="lead text-white">
+   Man who does not read is as good as one who cannot read.   
+  </p>
+  <form action="/charge" method="POST">
+    <script
+      src="https://checkout.stripe.com/checkout.js"    
+      class="stripe-button"
+      data-key="pk_test_51IpBaaSFpFUn1YzlQFQTEqm9lRBam7BVGwsybb00GnvNSqJv6FBYld9XnGubsfS6jZUiPTKysqCGgk1eBM5GIVpx00ovGVsWD0"
+      data-amount="29900"
+      data-name="Georgian's reflections"
+      data-description="Ebook on Georgian ethos"
+      data-zip-code = "true"
+      
+      data-locale="auto">
+    </script>
+    <script>
+      //Hde default stripe button
+      document.getElementsByClassName('stripe-button-el')[0]
+      .style.display = 'none';
+    </script>
+    <button type="submit" class="btn btn-outline-dark text-white btn-lg bg-danger">
+      Purchase for ₹299
+    </button>
+    </form>
+ 
+  </div> 
+ 
+ 
+ 
+  <div class="col-md-5">
+
+    <img src="/img/book.png" alt="logo" class="img-fluid">
+  </div> 
+</div>    
+</section>
